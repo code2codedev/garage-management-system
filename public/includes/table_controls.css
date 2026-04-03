@@ -1,0 +1,12 @@
+.table-container {
+    max-height: 400px;      /* fixed height so table area stays constant */
+    overflow-y: auto;       /* scroll inside table if needed */
+    margin-bottom: 0;
+}
+.table-controls {
+    text-align: center;
+    position: sticky;       /* keeps button visible just below table */
+    bottom: 0;
+    background: #fff;
+    padding: 10px;
+}

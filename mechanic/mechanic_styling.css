@@ -1,0 +1,116 @@
+/* ====== Global Layout ====== */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #1e2021;
+  color: #141619;
+  margin: 0;
+  padding: 0;
+}
+.main-content {
+  padding: 20px;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ====== Headings ====== */
+.page-heading {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ====== Popup Messages ====== */
+.popup-message {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.popup-success { background: #28a745; color: #fff; }
+.popup-error   { background: #dc3545; color: #fff; }
+.popup-warning { background: #ffc107; color: #000; }
+
+/* ====== Forms & Inputs ====== */
+.inline-form input,
+.inline-form select,
+.inline-form textarea,
+#searchAppointments,
+#searchMessages,
+#searchVehicles {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  height: 38px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  background: #fff;
+  color: #141619;
+}
+.inline-form textarea {
+  height: 60px;
+  resize: vertical;
+}
+.inline-form input:focus,
+.inline-form select:focus,
+.inline-form textarea:focus,
+#searchAppointments:focus,
+#searchMessages:focus,
+#searchVehicles:focus {
+  border-color: #cc1f1f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(204,31,31,0.4);
+}
+.inline-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* ====== Buttons ====== */
+.btn-green, .btn-blue {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-green  { background: #28a745; color: #fff; }
+.btn-blue   { background: #007bff; color: #fff; }
+.btn-green:hover  { background: #218838; transform: scale(1.05); }
+.btn-blue:hover   { background: #0069d9; transform: scale(1.05); }
+
+/* ====== Tables ====== */
+.table-wrapper { max-height: 400px; overflow-y: auto; margin-top: 15px; }
+.styled-table { width: 100%; border-collapse: collapse; }
+.styled-table th, .styled-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.styled-table thead {
+  background: #000000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.styled-table tr:nth-child(even) { background: #242323; }
+.styled-table tr:hover { background: #57f135; }
+
+/* ====== Footer ====== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #141619;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 100;
+}

@@ -1,0 +1,292 @@
+/* ====== Global Layout ====== */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #1e2021;
+  color: #141619;
+  margin: 0;
+  padding: 0;
+}
+.main-content {
+  padding: 20px;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ====== Headings ====== */
+.page-heading {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* ====== Report Navigation Tabs ====== */
+.report-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.report-links button {
+  background: #141619;       /* dark background */
+  color: #fff;               /* white text */
+  border: 2px solid #f6f5f5; /* red border */
+  padding: 8px 16px;         /* spacing inside */
+  border-radius: 6px;        /* rounded corners */
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.report-links button:hover {
+  background: #48df4d;       /* red background on hover */
+  color: #fff;
+}
+
+.report-links button.active {
+  background: #cc1f1f;       /* active tab highlighted */
+  color: #fff;
+  border-color: #141619;     /* dark border for contrast */
+}
+/* ====== Report Section Headings ====== */
+.report-section h3 {
+  color: #fff;              /* make headings white */
+  background: #3a3939;      /* optional: add a red background strip */
+  padding: 8px 12px;        /* spacing for readability */
+  border-radius: 6px 6px 0 0; /* rounded top corners */
+  margin: 0 0 10px 0;       /* spacing below heading */
+}
+
+/* ====== Popup Messages ====== */
+.popup-message {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.popup-success { background: #28a745; color: #fff; }
+.popup-error   { background: #dc3545; color: #fff; }
+.popup-warning { background: #ffc107; color: #000; }
+
+/* ====== Forms & Inputs ====== */
+.inline-form input, .inline-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+.inline-form input:focus, .inline-form select:focus {
+  border-color: #cc1f1f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(204,31,31,0.4);
+}
+
+/* ====== Buttons ====== */
+.btn-green  { background: #28a745; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.btn-blue   { background: #007bff; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.btn-orange { background: #fd7e14; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.btn-red    { background: #dc3545; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+button:hover { opacity: 0.9; }
+/* ====== Inline Forms for Inventory Actions ====== */
+/* ====== Forms & Inputs ====== */
+.inline-form input,
+.inline-form select,
+#reportSearch,
+#searchUsers,
+#searchServices,
+#searchJobs,
+#searchPayments,
+#searchAlerts,
+#searchHistory {
+  padding: 1px 1px;          /* consistent padding */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  height: 38px;               /* uniform height */
+  box-sizing: border-box;
+  margin-right: 1px;
+  background: #fff;           /* light background for contrast */
+  color: #141619;
+  flex: 0 0 0px;            /* fixed width for consistency */
+}
+
+/* Focus effect */
+.inline-form input:focus,
+.inline-form select:focus,
+#reportSearch:focus,
+#searchUsers:focus,
+#searchServices:focus,
+#searchJobs:focus,
+#searchPayments:focus,
+#searchAlerts:focus,
+#searchHistory:focus {
+  border-color: #cc1f1f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(204,31,31,0.4);
+}
+
+/* Inline alignment for forms */
+.inline-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1px;
+}
+
+/* Report header layout: links + search bar aligned left */
+.report-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;                  /* spacing between links and search bar */
+  margin-bottom: 15px;
+}
+
+.report-links {
+  display: flex;
+  gap: 10px;
+}
+/* ====== History Subheading + Search ====== */
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;             /* spacing between heading and search bar */
+  margin-bottom: 15px;
+}
+
+.history-header h2 {
+  color: #fff;           /* white text for subheading */
+  margin: 0;             /* remove extra margin */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#searchHistory {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  height: 38px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #141619;
+  flex: 0 0 250px;       /* fixed width for consistency */
+}
+#searchHistory:focus {
+  border-color: #cc1f1f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(204,31,31,0.4);
+}
+/* ====== Buttons ====== */
+.btn-green, .btn-blue, .btn-orange {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-green  { background: #28a745; color: #fff; }
+.btn-blue   { background: #007bff; color: #fff; }
+.btn-orange { background: #fd7e14; color: #fff; }
+
+.btn-green:hover  { background: #218838; transform: scale(1.05); }
+.btn-blue:hover   { background: #0069d9; transform: scale(1.05); }
+.btn-orange:hover { background: #e8590c; transform: scale(1.05); }
+
+/* ====== Table Actions Column ====== */
+.styled-table td:last-child {
+  white-space: nowrap;        /* keep buttons inline without wrapping */
+}
+
+/* ====== Tables ====== */
+.table-wrapper { max-height: 400px; overflow-y: auto; margin-top: 15px; }
+.styled-table { width: 100%; border-collapse: collapse; }
+.styled-table th, .styled-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.styled-table thead {
+  background: #cc1f1f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.styled-table tr:nth-child(even) { background: #242323; }
+.styled-table tr:hover { background: #57f135; }
+
+/* ====== Dashboard Flex Layout ====== */
+.dashboard-flex {
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* ensures right charts align with left chart height */
+}
+
+.totals-box {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-box {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* aligns Payment + Job charts evenly */
+}
+.right-box .chart-container {
+  flex: 1; /* equal height for both charts */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ====== Chart Containers ====== */
+.chart-container {
+  background: #fff;
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.chart-container canvas {
+  width: 80% !important;
+  height: 210px !important; /* resize pie charts and bar chart */
+}
+/* Resize pie charts smaller to avoid stretching */
+#paymentChart, #jobChart {
+  height: 100px !important; /* smaller height for pie charts */
+  width: 100% !important;
+}
+
+#totalsChart {
+  height: 300px !important; /* larger bar chart */
+  width: 100% !important;
+}
+
+/* ====== Footer ====== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #141619;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+
+/* ====== Animations ====== */
+.animate { opacity: 0; }
+.animate.fade-up { animation: fadeInUp 1s ease forwards; }
+.animate.slide-left { animation: slideInLeft 1s ease forwards; }
+.animate.slide-right { animation: slideInRight 1s ease forwards; }
+
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px);} to { opacity:1; transform:translateY(0);} }
+@keyframes slideInLeft { from { opacity:0; transform:translateX(-20px);} to { opacity:1; transform:translateX(0);} }
+@keyframes slideInRight { from { opacity:0; transform:translateX(20px);} to { opacity:1; transform:translateX(0);} }

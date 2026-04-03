@@ -1,0 +1,158 @@
+/* === GLOBAL RESET === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Bigi Black */
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === FORM CONTAINER === */
+.form-container {
+  width: 100%;
+  max-width: 420px; /* Prevent squishing on small screens */
+  padding: 30px 25px;
+  background-color: #201f1f; /* Bigi White */
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* === LOGO === */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Circular logo */
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #ff6600; /* Orange ring */
+}
+
+/* === HEADINGS === */
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ff6600; /* Bigi Orange */
+}
+
+/* === FORM INPUTS === */
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* === BUTTONS === */
+.btn-green {
+  background-color: #009933; /* Bigi Green */
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #007a29; /* Deep Green */
+}
+
+/* === LINKS === */
+a.orange-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff6600; /* Bigi Orange */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a.orange-link:hover {
+  text-decoration: underline;
+}
+
+/* === MESSAGE BOXES === */
+.message-box {
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #cc0000; /* Alert Red */
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #00cc66; /* Confirm Green */
+}
+
+/* === STATUS LABELS === */
+.status-label {
+  color: #0066cc; /* Bigi Blue */
+  font-weight: bold;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%; /* Fit nicely on tablets */
+    padding: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .btn-green {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    max-width: 95%; /* Fit nicely on phones */
+    padding: 15px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .form-box input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-green {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
