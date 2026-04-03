@@ -89,9 +89,9 @@ Since the system is already working:
 ## 📖 Usage Guide
 1. **Login/Register**: At `public/index.php` → Role-specific dashboard.
 2. **Customer**: Register/view vehicles (`customer_vehicles.php`).
-3. **Receptionist**: Register vehicles, assign jobs/services (`receptionist_vehicle_registration.php`).
+3. **Receptionist**: Register vehicles, (`receptionist_vehicle_registration.php`).
 4. **Mechanic**: View/update jobs, send messages (`mechanic_jobs.php`, `mechanic_messages.php`).
-5. **Admin**: Oversight (details in `admin/`).
+5. **Admin**: Oversight assign jobs/services (details in `admin/`).
 
 **Demo Flow**:
 - Customer registers vehicle.
