@@ -7,6 +7,7 @@
 GMS is a **full-stack PHP/MySQL web application** designed for garage management workflows. It supports multi-role access (Admin, Customer, Mechanic, Receptionist) to handle vehicle registration, job assignments, status tracking, internal messaging, and history logging. The system features modern UI with video backgrounds, searchable tables, popups, and responsive design.
 
 Built for efficiency in automotive repair shops, streamlining operations from customer intake to job completion.
+Here is the url for the hosted system: alpha-auto-garage.infinityfreeapp.com
 
 ## Installation
 1. Clone the repo
